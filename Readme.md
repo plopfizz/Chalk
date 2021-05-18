@@ -22,6 +22,12 @@ CHALK - A Web App where you can  Chat And Talk with another person in real time
 - [Web RTC](https://github.com/webrtc)
 - [Socket.io](https://socket.io/)
 - [Node.js](https://nodejs.org/en/)
-- [Ant Design](https://ant.design/)
+- [Ant Design](https://ant.design/) 
+
+## Reference LINKS
+ - https://muaz-khan.blogspot.com/2014/05/webrtc-tips-tricks.html
+ - https://www.youtube.com/watch?v=gnM3Ld6_upE&ab_channel=DarwinTech
+ - https://github.com/feross/simple-peer
+ - https://developer.mozilla.org/en-US/docs/Web/API/Navigator/getUserMedia
 
 
