@@ -68,9 +68,11 @@ const Options = () => {
     } else setIsModalVisible(false);
   }, [call.isReceivingCall]);
 
-  return (
+  return ( callAccepted && !callEnded ?(
+    <div></div>
+  ):(
     <div className={classes.options}>
-      <div style={{ marginBottom: "0.5rem" }}>
+      <div >
         <h2>UserName</h2>
         <Input
           size="large"
@@ -221,6 +223,7 @@ const Options = () => {
         </>
       )}
     </div>
+  )
   );
 };
 

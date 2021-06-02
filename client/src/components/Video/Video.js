@@ -6,7 +6,7 @@ import Man from "../../assests/man.svg";
 import VideoIcon from "../../assests/video.svg";
 import { io } from "socket.io-client";
 import VideoOff from "../../assests/video-off.svg";
-// import Profile from "../../assests/profile.svg";
+import Hang from "../../assests/hang.svg";
 import Msg_Illus from "../../assests/msg_illus.svg";
 import Msg from "../../assests/msg.svg";
 import { UserOutlined, MessageOutlined } from "@ant-design/icons";
@@ -85,20 +85,21 @@ const Video = () => {
           style={{ textAlign: "center" }}
           className="card"
           id={callAccepted && !callEnded ? "video1" : "video3"}
-        >
-          <div style={{ height: "2rem" }}>
-            <h3>{myVdoStatus && name}</h3>
+        > 
+          <div style={{ height: "3rem" }}>
+            {/* <h3>{myVdoStatus && name}</h3> */}
           </div>
-          <div className="video-avatar-container">
+          <div className="video-avatar-container_1">
             <video
               playsInline
               muted
               ref={myVideo}
               autoPlay
-              className="video-active"
+              className="video-active_1"
               style={{
                 opacity: `${myVdoStatus ? "1" : "0"}`,
                 transform: "scaleX(-1)",
+                 marginBottom:"2rem"
               }}
             />
 
@@ -107,6 +108,7 @@ const Video = () => {
                 backgroundColor: "#116",
                 position: "absolute",
                 opacity: `${myVdoStatus ? "-1" : "2"}`,
+                
               }}
               size={98}
               icon={!name && <UserOutlined />}
@@ -117,15 +119,15 @@ const Video = () => {
 
           <div className="iconsDiv">
             <div
-              className="icons"
+              className="icons_1"
               onClick={() => {
                 updateMic();
               }}
               tabIndex="0"
             >
               <i
-                className={`fa fa-microphone${myMicStatus ? "" : "-slash"}`}
-                style={{ transform: "scaleX(-1)" }}
+                className={` icons_1 fa fa-microphone${myMicStatus ? "" : "-slash"}`}
+                style={{ transform: "scaleX(-1)"  }}
                 aria-label={`${myMicStatus ? "mic on" : "mic off"}`}
                 aria-hidden="true"
               ></i>
@@ -197,16 +199,16 @@ const Video = () => {
 
       {callAccepted && !callEnded && userVideo && (
         <div className="card2" style={{ textAlign: "center" }} id="video2">
-          <div style={{ height: "2rem" }}>
-            <h3>{userVdoStatus && (call.name || userName)}</h3>
-          </div>
-
-          <div className="video-avatar-container">
+          {/* <div style={{ height: "2rem" }}>
+            <h3 className="card2name">{userVdoStatus && (call.name || userName)}</h3>
+          </div> */}
+          
+          <div className="video-avatar-container_2" >
             <video
               playsInline
               ref={userVideo}
               autoPlay
-              className="video-active"
+              className="video-active_2"
               style={{
                 opacity: `${userVdoStatus ? "1" : "0"}`,
               }}
@@ -224,20 +226,32 @@ const Video = () => {
               {userName || call.name}
             </Avatar>
             {!userMicStatus && (
-              <i
-                style={{
-                  position: "absolute",
-                  top: "0",
-                  left: "0",
-                  padding: "0.3rem",
-                  backgroundColor: "#fefefebf",
-                }}
-                className="fad fa-volume-mute fa-2x"
-                aria-hidden="true"
-                aria-label="microphone muted"
-              ></i>
+              // <i
+              //   
+              //   className="fad fa-volume-mute fa-2x"
+              //   aria-hidden="true"
+              //   aria-label="microphone muted"
+              // ></i>
+              <img src='./mute.png' alt="muted"
+              style={{position: "absolute",
+              top: "0",
+              right: "0",
+            }} 
+                  className="img"/ 
+                  >
+              
             )}
           </div>
+          <Button
+          variant="contained"
+          onClick={leaveCall}
+          className="hang"
+          tabIndex="0"
+          
+        >
+          <img src={Hang} alt="hang up" style={{ height: "15px" }} />
+          {/* &nbsp; Hang up */}
+        </Button>
         </div>
       )}
     </div>
