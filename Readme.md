@@ -7,7 +7,6 @@ CHALK - A Web App where you can  Chat And Talk with another person in real time
 - Instantly join a video call with a code
 - Chat in real-time
 - Chat Notifications
-- Install it as a PWA (Progressive Web App) on your device
 - Unlimited duration calls
 - Share code instantly on social media platforms
 - Simple and intuitive UI
@@ -29,5 +28,6 @@ CHALK - A Web App where you can  Chat And Talk with another person in real time
  - https://www.youtube.com/watch?v=gnM3Ld6_upE&ab_channel=DarwinTech
  - https://github.com/feross/simple-peer
  - https://developer.mozilla.org/en-US/docs/Web/API/Navigator/getUserMedia
+ - https://stackoverflow.com/questions/36212722/how-to-prevent-pull-down-to-refresh-of-mobile-chrome
 
 
