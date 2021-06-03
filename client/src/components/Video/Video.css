@@ -23,7 +23,7 @@
 .card {  
  
   
-  /* background-color: #bb6a6a; */
+  background-color: #bb6a6a;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +36,7 @@
 }
 
 .card2 {
-  /* background-color: #6a7ebb; */
+  background-color: #6a7ebb;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@
   align-items: center;
   justify-content: space-evenly;
   position: relative;
-  /* background-color: magenta; */
+  background-color: magenta;
   overflow:hidden;
  
 }
@@ -61,7 +61,7 @@
   align-items: center;
   justify-content: space-evenly;
   position: relative;
-  /* background-color: rgb(187, 255, 0); */
+  background-color: rgb(187, 255, 0);
   overflow:hidden;
   margin-top: -2rem;
  
@@ -156,7 +156,7 @@
  /* opacity: 0.5; */
   
 
-  /* background-color: rgb(255, 0, 0); */
+  background-color: rgb(255, 0, 0);
 }
 
 .iconsDiv > div {
