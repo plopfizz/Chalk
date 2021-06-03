@@ -22,6 +22,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  margin-top: 12rem;
   
  
   
@@ -99,8 +100,8 @@
     
     /* margin-top: 0.1rem; */
     }
-  .video-avatar-container_2 {
-    /* margin-top: 1rem; */
+  .video-av r-container_2 {
+    margin-top: 1rem;
      /* max-width: 100%;  */
    
      /* height: 147px; */
