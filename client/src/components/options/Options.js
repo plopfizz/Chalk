@@ -73,7 +73,7 @@ const Options = () => {
   ):(
     <div className={classes.options}>
       <div >
-        <h2>UserName</h2>
+        <h2 className={classes.username}>UserName</h2>
         <Input
           size="large"
           placeholder="Your name"
@@ -91,7 +91,7 @@ const Options = () => {
         <div className={classes.share_options}>
           <CopyToClipboard text={me}>
             <Button
-              type="primary"
+              type="secondary"
               icon={<CopyOutlined />}
               className={classes.btn}
               tabIndex="0"
@@ -147,6 +147,7 @@ const Options = () => {
 
         {callAccepted && !callEnded ? (
           <Button
+          
             variant="contained"
             onClick={leaveCall}
             className={classes.hang}
@@ -157,7 +158,7 @@ const Options = () => {
           </Button>
         ) : (
           <Button
-            type="primary"
+          type="secondary"
             icon={<PhoneOutlined />}
             onClick={() => {
               if (name.length) callUser(idToCall);

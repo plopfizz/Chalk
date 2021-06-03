@@ -10,16 +10,19 @@
   padding: 0.5rem 1rem;
   border-top: 5px solid rgb(2, 13, 24);
   border-radius: 0.25rem;
-  margin-top: 5rem;
+  margin-top: -0.01em;
+  background-color: rgb(255, 218, 7);
+  z-index: 1000;
+}
+.username{
   z-index: 500;
 }
-
 @media (max-width: 720px) {
   .options {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    margin-top: 15rem;
+    margin-top: 0rem;
   }
 }
 .options > * {
