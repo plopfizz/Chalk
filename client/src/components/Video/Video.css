@@ -29,8 +29,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  
-  
+  overflow: hidden;
  
   
 }
@@ -43,7 +42,7 @@
   justify-content:center;
   align-items: center;
   border-radius: 5px;
- 
+ overflow: hidden;
  
 }
 
@@ -63,7 +62,7 @@
   position: relative;
   /* background-color: rgb(187, 255, 0); */
   overflow:hidden;
-  margin-top: -2rem;
+  /* margin-top: -2rem; */
  
 }
 
@@ -92,7 +91,7 @@
 .img{
  
     position: absolute;
-    top: 0%;
+    /* top: 0%; */
     left: 0;
     background-color: #fefefebf;
     width: 5%;
@@ -107,11 +106,9 @@
     margin-top: 0rem;
      display: grid;
     grid-auto-rows: 300px;
+
   }
-  .card2name{
-    
-    /* margin-top: 0.1rem; */
-    }
+  
   
   .video-active_1 {
     width: 80% !important;

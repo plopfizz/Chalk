@@ -98,7 +98,7 @@ const Video = () => {
               style={{
                 opacity: `${myVdoStatus ? "1" : "0"}`,
                 transform: "scaleX(-1)",
-                 marginBottom:"2rem"
+                //  marginBottom:"2rem"
               }}
             />
 
