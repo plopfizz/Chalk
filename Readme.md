@@ -29,5 +29,7 @@ CHALK - A Web App where you can  Chat And Talk with another person in real time
  - https://github.com/feross/simple-peer
  - https://developer.mozilla.org/en-US/docs/Web/API/Navigator/getUserMedia
  - https://stackoverflow.com/questions/36212722/how-to-prevent-pull-down-to-refresh-of-mobile-chrome
+ - https://www.youtube.com/watch?v=btKd-VLzNR0&ab_channel=HusseinNasser
+ - https://www.youtube.com/watch?v=p2HzZkd2A40&ab_channel=GoogleDevelopers
 
 
